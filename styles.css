@@ -251,13 +251,17 @@ h1 em { color: var(--lime); }
   place-items: center;
   border: 1px solid rgba(255,254,250,.38);
   border-radius: 50%;
-  color: var(--deep);
   background: var(--lime);
   box-shadow: inset 0 0 0 16px var(--deep), inset 0 0 0 17px rgba(255,254,250,.16);
-  font-family: var(--serif);
-  font-size: 64px;
-  font-style: italic;
-  letter-spacing: -0.13em;
+  overflow: hidden;
+}
+
+.monogram img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .identity-details p { margin-bottom: 6px; color: rgba(255,254,250,.54); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
@@ -390,7 +394,7 @@ h2 em { color: var(--orange); }
   .hero { min-height: auto; }
   .hero-content { grid-template-columns: minmax(0, 1fr) 260px; gap: 38px; padding-top: 128px; padding-bottom: 75px; }
   .identity-card { min-height: 350px; padding: 17px; }
-  .monogram { width: 148px; height: 148px; margin-top: 33px; font-size: 53px; }
+  .monogram { width: 148px; height: 148px; margin-top: 33px; }
   .identity-details strong { font-size: 14px; }
   .facts-grid article { min-height: 105px; padding-inline: 17px; }
   .fact-value { font-size: 17px; }
